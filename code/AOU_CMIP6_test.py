@@ -41,7 +41,7 @@ def o2sat(T,S):
     # o2_sat from ml/kg to mmol/m^-3  
     # assume a density of 1025
     # but we can refine that estimating the actual density
-    osat = osat * 1 / 22.392;
+    osat = osat * 1025 / 22.392;
     return osat
 
 oxygen_sat = o2sat(T,S)
